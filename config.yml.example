@@ -2,12 +2,6 @@
 application:
   changelog_file: /path/to/changelog.txt
 
-database:
-  adapter: mysql
-  host: localhost
-  username: root
-  password: pass
-
 rss:
   # Maximum entries to show (set to 0 for all)
   max_entries: 20
