@@ -21,6 +21,8 @@ html:
       - "css/print.css"
     ie:
       - "css/ie6.css"
+  javascripts:
+    - "js/jquery.js"
 
 # RSS Feed Information
 # max_entries - maximum number of entries to publish via RSS (set to 0 to publish all)
