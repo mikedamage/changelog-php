@@ -1,0 +1,102 @@
+# Bridges Peru Website Changelog
+
+--------------------------------------
+
+Please record all changes to the Bridges website in this document.
+This document uses Markdown syntax for text formatting, which allows the Changelog to be converted to HTML for easier viewing without having to worry about all those annoying HTML tags.
+
+A Markdown reference can be found at [Daring Fireball](http://daringfireball.net/projects/markdown/syntax). If you don't feel like learning Markdown, just refer to the changelog format below.
+
+Note that underscores must be escaped with a backslash (like this: "\_"). Otherwise Markdown thinks you're trying to italicize something.
+
+Use the following format for all change records (including the dashes for horizontal rules to seperate each time the site is updated):
+
+--------------------------------------
+
+## MM-DD-YYYY (optionally add time as HH:MM in 24-hour time)
+
+### Mike // Fifth Room Creative (i.e. Person // Company)
+
+*	Changed intro text in index.html
+*	Added new images to the Crafts section
+
+### Files Modified
+*	index.html (_optionally include line numbers modified; i.e._ lines 52-68)
+*	crafts/crafts_1.html (line 18)
+
+### Files Added
+*	crafts/images/crafts28.jpg
+
+### Files Deleted
+*	crafts/images/crafts30.jpg
+
+--------------------------------------
+
+## 04-27-2009 16:30
+
+### Mike // Fifth Room Creative
+
+*	HTML code cleanup
+	*	Fixing indentation to make code more human-readable
+	*	Removed references to files on Ray's machine to get rid of dead links (nothing visible, just stylesheets)
+	*	Missing body tag in about.html fixed.
+	*	Un-capitalized some existing META tags, capitalization is a no-no in XHTML.
+	*	Removed duplicate META tags in about.html for "cache-control" and "expires".
+*	Began SEO analysis (keywords, titles, description, etc.)
+	*	Updated title of index.html, added description and keywords meta tags.	
+	*	Updated pages/about/about.html with same SEO additions.
+
+### Files Modified
+*	index.html
+*	pages/about/about.htm
+
+--------------------------------------
+
+## 04-28-2009 15:40
+
+### Mike // Fifth Room Creative
+
+*	Created a Favicon.ico file to make people's bookmarks and certain search results prettier.
+*	Added "robots" META tag to home page
+*	Added small, semantic site navigation under intro image to improve site indexing.
+	*	Added tab-indexes and access keys to important pages for improved mobile/assistive device accessibility.
+*	New index page content gives title 91% relevance, keywords 100% relevance, description 100% relevance. Perfect!
+*	Began work on ABOUT US page.
+	*	Duplicated home page META info.
+	*	Replaced the page's navigation with a semantic, unordered list w/ tab indexes and access keys.
+*	CONTACT US page html cleanup and navigation replacement.
+	*	added missing BODY tag.
+	*	replaced nav with semantic unordered list as above.
+	*	Optimized META info.
+*	FRIENDS page html cleanup and navigation replacement.
+	*	added missing BODY tag.
+	*	replaced nav with semantic unordered list as above.
+	*	Optimized META info.
+*	EVENTS page html cleanup and navigation replacement.
+	*	added missing BODY tag.
+	*	replaced nav with semantic unordered list as above.
+	*	Optimized META info.
+*	CRAFTS pages, TOURS page, same deal.
+*	Added correct META info and HTML corrections to volunteering.html but did not include it in navigation b/c it is not finished.
+
+_NOTE: When creating new pages, PLEASE give them a .html extension from now on. Having both .html and .htm extensions is confusing for both man and machine._
+
+### Files Added
+*	favicon.ico
+
+### Files Modified
+*	index.html
+*	styles/bridges.css
+*	pages/about/about.htm
+*	pages/contact/contact.htm
+*	pages/friends/friends.html
+*	pages/food\_items/food\_items.html
+*	pages/events/events.html
+*	pages/tours/tours.html
+*	pages/crafts/crafts.html
+*	pages/crafts/craft\_pages/crafts01/crafts\_1.html
+*	pages/crafts/craft\_pages/crafts02/crafts\_2.html
+*	pages/crafts/craft\_pages/crafts03/crafts\_3.html
+*	pages/volunteering/volunteering.html
+
+--------------------------------------
