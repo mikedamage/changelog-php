@@ -1,7 +1,33 @@
-# Changelog file location (absolute system path)
-application:
-  changelog_file: /path/to/changelog.txt
+# Changelog Information
+# file - absolute system path of your changelog file
+# format - accepts either "markdown" or "textile"
+changelog:
+  file: "/path/to/changelog.txt"
+  format: "markdown"
 
+# HTML Output Information
+# anchors - accepts either "true" or "false", adds named anchors and a "back to top" link to each entry
+# stylesheets - accepts a list of relative paths of stylesheets to include. Each media type gets its own list, as well as the option to include Internet Explorer specific stylesheets.
+# title - title of the resulting html page (displayed in the title tag and optionally as an H1 tag in body)
+# show_title_h1 - Show page title as an H1 tag in the page body 
+html:
+  title: "My Changelog"
+  show_title_h1: "false"
+  anchors: "true"
+  stylesheets:
+    screen:
+      - "css/changelog.css"
+    print:
+      - "css/print.css"
+    ie:
+      - "css/ie6.css"
+
+# RSS Feed Information
+# max_entries - maximum number of entries to publish via RSS (set to 0 to publish all)
+# feed_title - Title of the RSS feed
+# author_name - Name of author that shows up in feed details
 rss:
-  # Maximum entries to show (set to 0 for all)
   max_entries: 20
+  feed_title: "My Changelog"
+  author_name: "My Name or My Company"
+
