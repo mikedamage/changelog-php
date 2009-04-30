@@ -2,13 +2,13 @@
 	require_once("includes/prolog.php");
 	
 	// Set content type to plain text for debugging:
-	header("Content-Type: text/plain");
+	// header("Content-Type: text/plain");
 	
 	// Tell the browser we're sending an ATOM feed:
-	// header("Content-Type: application/atom+xml");
+	header("Content-Type: application/xml");
 	
-	function uuid($prefix = '') {
-    	$chars = md5(uniqid(mt_rand(), true));
+	function uuid($prefix = 'urn:uuid:', $string = '') {
+    	$chars = md5($string);
     	$uuid  = substr($chars,0,8) . '-';
     	$uuid .= substr($chars,8,4) . '-';
     	$uuid .= substr($chars,12,4) . '-';
@@ -22,8 +22,7 @@
 	$last_updated = filemtime($config["changelog"]["file"]);
 	$entries = preg_split('/\-{4,}/', $changelog);
 ?>
-
-<?php echo '<?xml version="1.0" encoding="utf-8"?>'; ?>
+<?php print '<?xml version="1.0" encoding="utf-8"?>'; ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title><?php print $config["feed"]["title"]; ?></title>
 	<?php if (isset($config["feed"]["subtitle"])): ?>
@@ -40,8 +39,22 @@
 	
 	<?php
 		foreach ($entries as $entry) {
-			preg_match_all('/^\#{2} (.+)/m', $entry, $matches);
-			print_r($matches);
+			preg_match_all('/^\#{2}\ (.+)/m', $entry, $date_matches);
+			if (count($date_matches) > 1) {
+				$date = $date_matches[1][0];
+				$atom_date = strftime($date_format, strtotime($date));
+				echo "<entry>";
+				echo "<title>".$date."</title>";
+				echo '<link href="'.$config['feed']['alternate'].'" />';
+				echo "<id>".uuid($date)."</id>";
+				echo "<updated>".$atom_date."</updated>";
+				echo '<content type="xhtml">'."\n";
+				echo "<![CDATA[\n";
+				echo Markdown($entry);
+				echo "]]>\n";
+				echo "</content>\n";
+				echo "</entry>";
+			}
 		}
 	?>
 </feed>
