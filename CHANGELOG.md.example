@@ -13,7 +13,7 @@ Use the following format for all change records (including the dashes for horizo
 
 --------------------------------------
 
-## MM-DD-YYYY (optionally add time as HH:MM in 24-hour time)
+## DD Month YYYY
 
 ### Mike // Fifth Room Creative (i.e. Person // Company)
 
@@ -32,7 +32,7 @@ Use the following format for all change records (including the dashes for horizo
 
 --------------------------------------
 
-## 04-27-2009 16:30
+## 27 April 2009
 
 ### Mike // Fifth Room Creative
 
@@ -52,7 +52,7 @@ Use the following format for all change records (including the dashes for horizo
 
 --------------------------------------
 
-## 04-28-2009 15:40
+## 28 April 2009
 
 ### Mike // Fifth Room Creative
 
@@ -98,5 +98,33 @@ _NOTE: When creating new pages, PLEASE give them a .html extension from now on. 
 *	pages/crafts/craft\_pages/crafts02/crafts\_2.html
 *	pages/crafts/craft\_pages/crafts03/crafts\_3.html
 *	pages/volunteering/volunteering.html
+
+--------------------------------------
+
+## 28 April 2009 
+
+### Mike Green // Fifth Room Creative
+
+*	Indexed pages into a sitemap.xml file
+	*	Submitted sitemap xml to Google Webmaster Tools for site indexing
+*	Added a Google Earth KML location file
+	*	Linked it to the sitemap xml for increased relevance to local searches
+
+### Files Added
+*	sitemap.xml
+*	bridges.kml
+
+--------------------------------------
+
+## 29 April 2009
+
+### Mike Green // Fifth Room Creative
+
+*	Added Google Webmaster Tools verification META tag to index.html. Removed it upon verification
+*	Added the geo: namespace to sitemap.xml for geotagging in Google Earth & Google Maps.
+
+## Files Modified
+*	index.html
+*	sitemap.xml
 
 --------------------------------------

@@ -2211,7 +2211,7 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 		$text = preg_replace_callback(
 			'{
 				(^.+?)								# $1: Header text
-				(?:[ ]+\{\#([-_:a-zA-Z0-9]+)\})?	# $2: Id attribute
+				(?:[ ]+\{\.([-_:a-zA-Z0-9]+)\})?	# $2: Id attribute
 				[ ]*\n(=+|-+)[ ]*\n+				# $3: Header footer
 			}mx',
 			array(&$this, '_doHeaders_callback_setext'), $text);
@@ -2229,7 +2229,7 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 				(.+?)		# $2 = Header text
 				[ ]*
 				\#*			# optional closing #\'s (not counted)
-				(?:[ ]+\{\#([-_:a-zA-Z0-9]+)\})? # id attribute
+				(?:[ ]+\{\.([-_:a-zA-Z0-9]+)\})? # id attribute
 				[ ]*
 				\n+
 			}xm',
@@ -2239,7 +2239,7 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 	}
 	function _doHeaders_attr($attr) {
 		if (empty($attr))  return "";
-		return " id=\"$attr\"";
+		return " class=\"$attr\"";
 	}
 	function _doHeaders_callback_setext($matches) {
 		if ($matches[3] == '-' && preg_match('{^- }', $matches[1]))

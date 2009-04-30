@@ -1,13 +1,5 @@
-<?php
-	require_once("includes/spyc.php");
-	require_once("includes/markdown.php");
-	require_once("includes/classTextile.php");
-	require_once("includes/simple_html_dom.php");
-	
-	$config = Spyc::YAMLLoad("config.yml");
-	$changelog = file_get_contents($config["changelog"]["file"]);
-	$html = Markdown($changelog);
-?>
+<?php require_once("includes/prolog.php"); ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
