@@ -13,28 +13,28 @@ Use the following format for all change records (including the dashes for horizo
 
 --------------------------------------
 
-## DD Month YYYY {.date}
+## DD Month YYYY
 
-### Mike // Fifth Room Creative (i.e. Person // Company) {.editor}
+### Mike // Fifth Room Creative (i.e. Person // Company)
 
 *	Changed intro text in index.html
 *	Added new images to the Crafts section
 
-### Files Modified {.modified}
+### Files Modified
 *	index.html (_optionally include line numbers modified; i.e._ lines 52-68)
 *	crafts/crafts_1.html (line 18)
 
-### Files Added {.added}
+### Files Added
 *	crafts/images/crafts28.jpg
 
-### Files Deleted {.deleted}
+### Files Deleted
 *	crafts/images/crafts30.jpg
 
 --------------------------------------
 
-## 27 April 2009 {.date}
+## 27 April 2009
 
-### Mike // Fifth Room Creative {.editor}
+### Mike // Fifth Room Creative
 
 *	HTML code cleanup
 	*	Fixing indentation to make code more human-readable
@@ -46,15 +46,15 @@ Use the following format for all change records (including the dashes for horizo
 	*	Updated title of index.html, added description and keywords meta tags.	
 	*	Updated pages/about/about.html with same SEO additions.
 
-### Files Modified {.modified}
+### Files Modified
 *	index.html
 *	pages/about/about.htm
 
 --------------------------------------
 
-## 28 April 2009	{.date}
+## 28 April 2009
 
-### Mike // Fifth Room Creative	{.editor}
+### Mike // Fifth Room Creative
 
 *	Created a Favicon.ico file to make people's bookmarks and certain search results prettier.
 *	Added "robots" META tag to home page
@@ -81,10 +81,10 @@ Use the following format for all change records (including the dashes for horizo
 
 _NOTE: When creating new pages, PLEASE give them a .html extension from now on. Having both .html and .htm extensions is confusing for both man and machine._
 
-### Files Added		{.added}
+### Files Added
 *	favicon.ico
 
-### Files Modified	{.modified}
+### Files Modified
 *	index.html
 *	styles/bridges.css
 *	pages/about/about.htm
@@ -101,29 +101,29 @@ _NOTE: When creating new pages, PLEASE give them a .html extension from now on. 
 
 --------------------------------------
 
-## 28 April 2009 {.date}
+## 28 April 2009
 
-### Mike Green // Fifth Room Creative {.editor}
+### Mike Green // Fifth Room Creative
 
 *	Indexed pages into a sitemap.xml file
 	*	Submitted sitemap xml to Google Webmaster Tools for site indexing
 *	Added a Google Earth KML location file
 	*	Linked it to the sitemap xml for increased relevance to local searches
 
-### Files Added {.added}
+### Files Added
 *	sitemap.xml
 *	bridges.kml
 
 --------------------------------------
 
-## 29 April 2009 {.date}
+## 29 April 2009
 
-### Mike Green // Fifth Room Creative {.editor}
+### Mike Green // Fifth Room Creative
 
 *	Added Google Webmaster Tools verification META tag to index.html. Removed it upon verification
 *	Added the geo: namespace to sitemap.xml for geotagging in Google Earth & Google Maps.
 
-## Files Modified {.modified}
+## Files Modified
 *	index.html
 *	sitemap.xml
 

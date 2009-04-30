@@ -17,6 +17,7 @@
     	return $prefix . $uuid;
   	}
 	
+	$date_header_regex = '/^#{2}\ (.+)$/';
 	$date_format = "%Y-%m-%dT%H:%M:%SZ";
 	$last_updated = filemtime($config["changelog"]["file"]);
 	$entries = preg_split('/\-{4,}/', $changelog);
@@ -39,7 +40,8 @@
 	
 	<?php
 		foreach ($entries as $entry) {
-			
+			preg_match_all('/^\#{2} (.+)/m', $entry, $matches);
+			print_r($matches);
 		}
 	?>
 </feed>
