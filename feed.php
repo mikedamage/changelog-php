@@ -39,7 +39,7 @@
 	
 	<?php
 		foreach ($entries as $entry) {
-			preg_match_all('/^\#{2}\ (.+)/m', $entry, $date_matches);
+			preg_match_all('/^\#{2}\ (\d{1,2}\ .+\ \d{2,4})/m', $entry, $date_matches);
 			if (count($date_matches) > 1) {
 				$date = $date_matches[1][0];
 				$atom_date = strftime($date_format, strtotime($date));
